@@ -26,7 +26,8 @@
             {{responsibility}}
           </li>
         </ul>
-        <v-card-action>
+        <v-card-actions>
+          <div class="flex-grow-1"></div>
           <v-btn
             color="primary"
             small
@@ -40,7 +41,7 @@
             >mdi-android</v-icon>
 
           </v-btn>
-        </v-card-action>
+        </v-card-actions>
       </v-card>
 
     </v-card>
@@ -57,7 +58,7 @@ export default {
         position: "IT / Development",
         dates: "2012-Present",
         responsibilities: [
-          "Converting paper records to pdf format",
+          "Converting paper records to digital",
           "Consulting security measures as well as hardware and software upgrades",
           "Maintaining hardware and software both remote and onsite",
           "Creating and maintaining company website (cftitle.com)",
