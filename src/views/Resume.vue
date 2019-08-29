@@ -14,8 +14,8 @@
         <v-col
           cols="12"
           sm="12"
-          md="6"
-          lg="2"
+          md="4"
+          lg="3"
         >
           <Skills />
         </v-col>
@@ -23,20 +23,17 @@
         <v-col
           cols="12"
           sm="12"
-          md="6"
+          md="4"
           lg="3"
         >
-          <Education />
+          <v-col>
+            <Education />
+          </v-col>
+          <v-col>
+            <References />
+          </v-col>
         </v-col>
 
-        <v-col
-          cols="12"
-          sm="12"
-          md="6"
-          lg="3"
-        >
-          <References />
-        </v-col>
       </v-row>
     </v-container>
 

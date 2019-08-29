@@ -57,10 +57,13 @@ export default {
         name: "Java",
         proficiency: 3,
         icon: "mdi-language-java"
+      },
+      {
+        name: "Android",
+        proficiency: 3,
+        icon: "mdi-android"
       }
     ]
   })
 };
 </script>
-<style lang="scss" scoped>
-</style>

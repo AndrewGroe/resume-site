@@ -28,6 +28,7 @@
         </ul>
         <v-card-action>
           <v-btn
+            color="primary"
             small
             v-if="job.links"
             :href="job.links.url"
@@ -72,9 +73,11 @@ export default {
         position: "Web & Mobile Development",
         dates: "2012-present",
         responsibilities: [
-          "Comfortable with JavaScript as well as Java and Kotlin",
-          "Familiarity with common software architectures(MVVM, MVP, MVC)",
-          "Experience with common Android 3rd party libraries(Retrofit, Glide, Room, etc.)",
+          "Comfortable with modern JavaScript (ES6+)",
+          "Proficiency with various frontend frameworks",
+          "Android development with Java and Kotlin",
+          "Familiarity with common software architectures (MVVM, MVP, MVC)",
+          "Experience with common Android 3rd party libraries (Retrofit, Glide, Room, etc.)",
           "Understanding of advanced Android topics like RxJava, Coroutines & Extension Functions, Dependency Injection, Data Binding and more",
           "Experience publishing to both Google Play Store and App Store"
         ]
@@ -83,5 +86,3 @@ export default {
   })
 };
 </script>
-<style lang="scss" scoped>
-</style>
