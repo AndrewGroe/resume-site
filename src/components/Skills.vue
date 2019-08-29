@@ -1,21 +1,26 @@
 <template>
   <div>
-    <v-flex class="text-center" xs12 md2>
-      <v-card>
-        <v-card-title>Skills</v-card-title>
-        <div v-for="skill in this.skills" :key="skill.id">
-          {{ skill.name }}
-          <v-rating
-            dense
-            :value="skill.proficiency"
-            :empty-icon="skill.icon"
-            :full-icon="skill.icon"
-            color="primary"
-            background-color="grey"
-          ></v-rating>
-        </div>
+    <v-card class="pb-2">
+      <v-card-title class="subtitle primary--text font-weight-thin">Skills</v-card-title>
+      <v-card
+        v-for="skill in this.skills"
+        :key="skill.id"
+        class="pa-2 mx-2 my-1"
+        elevation="8"
+      >
+        <span>{{ skill.name }}</span>
+        <v-rating
+          dense
+          class="text-center"
+          :value="skill.proficiency"
+          :empty-icon="skill.icon"
+          :full-icon="skill.icon"
+          color="primary"
+          background-color="grey"
+        ></v-rating>
       </v-card>
-    </v-flex>
+    </v-card>
+
   </div>
 </template>
 

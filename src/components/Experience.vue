@@ -1,47 +1,69 @@
 <template>
   <div>
-    <v-flex xs12 md4>
-      <v-card>
-        <v-card-title>Experience</v-card-title>
-        <v-list-item v-for="job in jobs" :key="job.id"></v-list-item>
+
+    <v-card class="pa-2">
+
+      <v-card-title class="subtitle primary--text font-weight-thin">Work Experience</v-card-title>
+      <v-card
+        v-for="job in jobs"
+        :key="job.id"
+        class="pa-2 ma-2 pb-4"
+        elevation="8"
+      >
+        <v-card-title>{{job.position}}</v-card-title>
+        <v-card-text class="overline">
+
+          {{job.company}}
+          <br>
+          {{job.dates}}
+        </v-card-text>
+
+        <ul>
+          <li
+            v-for="responsibility in job.responsibilities"
+            :key="responsibility.key"
+          >
+            {{responsibility}}
+          </li>
+        </ul>
+
       </v-card>
-    </v-flex>
+
+    </v-card>
+
   </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-    skills: [
+    jobs: [
       {
-        name: "HTML",
-        proficiency: 4,
-        icon: "mdi-language-html5"
+        company: "Central Florida Title Center",
+        position: "IT / Development",
+        dates: "2012-Present",
+        responsibilities: [
+          "Consulting hardware and software upgrades",
+          "Maintaining hardware and software both remote and onsite",
+          "Creating and maintaining company website (cftitle.com)",
+          "Creating and maintaining native mobile apps Android(Java) & iOS(Swift)"
+        ],
+        links: {
+          name: "Android App",
+          url: "https://tinyurl.com/cftcplaystore"
+        }
       },
       {
-        name: "CSS",
-        proficiency: 3,
-        icon: "mdi-language-css3"
-      },
-      {
-        name: "JavaScript",
-        proficiency: 4,
-        icon: "mdi-language-javascript"
-      },
-      {
-        name: "Vue.js",
-        proficiency: 3,
-        icon: "mdi-vuejs"
-      },
-      {
-        name: "Node.js",
-        proficiency: 2,
-        icon: "mdi-nodejs"
-      },
-      {
-        name: "Java",
-        proficiency: 3,
-        icon: "mdi-language-java"
+        company: "Personal Projects",
+        position: "Web & Mobile Development",
+        dates: "2012-present",
+        responsibilities: [
+          "Comfortable with JavaScript as well as Java and Kotlin",
+          "Familiarity with common software architectures(MVVM, MVP, MVC)",
+          "Experience with common Android 3rd party libraries(Retrofit, Glide, Room, etc.)",
+          "Understanding of advanced Android topics like RxJava, Coroutines & Extension Functions, Dependency Injection, Data Binding and more",
+          "Experience publishing to both Google Play Store and App Store"
+        ]
       }
     ]
   })
