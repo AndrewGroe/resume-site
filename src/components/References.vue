@@ -35,7 +35,7 @@ export default {
         name: "Ana Rivera",
         position: "Manager-Title Agent",
         company: "Central Florida Title Center LLC",
-        phone: "407-696-3505",
+        phone: "407-350-9523",
         email: "ana@cftitle.com"
       },
       {

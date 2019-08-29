@@ -26,7 +26,20 @@
             {{responsibility}}
           </li>
         </ul>
+        <v-card-action>
+          <v-btn
+            small
+            v-if="job.links"
+            :href="job.links.url"
+          >{{job.links.name}}
 
+            <v-icon
+              small
+              right
+            >mdi-android</v-icon>
+
+          </v-btn>
+        </v-card-action>
       </v-card>
 
     </v-card>
@@ -43,7 +56,8 @@ export default {
         position: "IT / Development",
         dates: "2012-Present",
         responsibilities: [
-          "Consulting hardware and software upgrades",
+          "Converting paper records to pdf format",
+          "Consulting security measures as well as hardware and software upgrades",
           "Maintaining hardware and software both remote and onsite",
           "Creating and maintaining company website (cftitle.com)",
           "Creating and maintaining native mobile apps Android(Java) & iOS(Swift)"
