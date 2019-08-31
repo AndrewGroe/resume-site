@@ -26,12 +26,15 @@
       </v-card-text>
 
       <v-card-text>Motivated and determined developer with fullstack web and native mobile development experience.
-        Eager to join and agile team and contribute to the SDLC.
+        Eager to join an agile team and contribute to the SDLC.
       </v-card-text>
 
       <v-card-actions>
-          <div class="flex-grow-1"></div>
-        <v-btn color="primary">More About Me</v-btn>
+        <div class="flex-grow-1"></div>
+        <v-btn
+          to="/about"
+          color="primary"
+        >More About Me</v-btn>
       </v-card-actions>
     </v-card>
 
