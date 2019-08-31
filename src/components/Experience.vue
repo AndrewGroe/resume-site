@@ -58,11 +58,11 @@ export default {
         position: "IT / Development",
         dates: "2012-Present",
         responsibilities: [
-          "Converting paper records to digital",
+          "Providing IT support and consulting",
           "Consulting security measures as well as hardware and software upgrades",
           "Maintaining hardware and software both remote and onsite",
           "Creating and maintaining company website (cftitle.com)",
-          "Creating and maintaining native mobile apps Android(Java) & iOS(Swift)"
+          "Creating and maintaining native mobile apps Android (Java) & iOS (Swift)"
         ],
         links: {
           name: "Android App",
