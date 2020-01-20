@@ -56,7 +56,7 @@ export default {
       {
         company: "Central Florida Title Center",
         position: "IT / Development",
-        dates: "2012-Present",
+        dates: "2012-2020",
         responsibilities: [
           "Providing IT support and consulting",
           "Consulting security measures as well as hardware and software upgrades",
