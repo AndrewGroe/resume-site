@@ -20,8 +20,6 @@
       <v-card-text>
         <span>{{email}}</span>
         <br>
-        <span>{{phone}}</span>
-        <br>
         <span>{{location}}</span>
       </v-card-text>
 
@@ -46,7 +44,6 @@ export default {
   data: () => ({
     name: "Andrew Groe",
     email: "andrewgroe.dev@gmail.com",
-    phone: "407-227-5573",
     location: "Orlando, FL"
   })
 }
