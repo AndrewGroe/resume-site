@@ -8,7 +8,6 @@
           md="4"
           lg="3"
         >
-          <Bio />
         </v-col>
         <v-col
           cols="12"
@@ -25,11 +24,7 @@
 </template>
 
 <script>
-import Bio from "../components/Bio";
 
 export default {
-  components: {
-    Bio
-  }
 };
 </script>
